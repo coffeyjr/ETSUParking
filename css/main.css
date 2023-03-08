@@ -1,0 +1,78 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+html, body, #map {
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    font-size: 40px;
+    padding-left: 20px;
+}
+h2{
+    padding-top: 20px;
+}
+.container{
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+.navbar-brand img{
+    width: 50px;
+}
+.navbar-brand{
+    margin-right: 0;
+    padding: 0 1em;
+}
+.navbar-nav{
+    align-items: center;
+}
+.navbar .navbar-na .nav-link{
+    color: #041E42;
+    font-size: 1.1em;
+    padding: 5em 1em;
+}
+.btn, .btn-outline-primary, .btn-sm, .btn-block, .mb-1{
+    background-color: none !important;
+    color: #041E42 !important;
+    border-color: #041E42 !important;
+    border-radius: 1px !important;
+    width: 100%;
+    padding-block: 10px !important;
+}
+.btn:hover, .btn-outline-primary:hover, .btn-sm:hover, .btn-block:hover, .mb-1:hover {
+    background-color: #041E42 !important;
+    color: #FFC72C !important;
+    border-color: #FFC72C !important;
+    border-radius: 1px !important;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+a{
+    color: #041E42;
+}
+a:hover{
+    color: #FFC72C;
+}
+.accordion-button{
+    color: #041E42;
+ }
+.accordion-button:not(.collapsed){
+    color: #041E42;
+    background-color: #FFC72C;
+}
+.col-8{
+    padding-bottom: 80px;
+}
+@media screen and (min-width:992px) {
+    .navbar-brand img{
+        width: 75px;
+    }
+    .navbar-brand{
+        margin-right: 0;
+        padding: 0 1em;
+    }
+}
