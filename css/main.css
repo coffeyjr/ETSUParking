@@ -3,10 +3,16 @@ body {
     margin: 0;
     font-family: 'Space Grotesk', sans-serif;
 }
-html, body, #map {
+html, body {
     height: 100%;
     width: 100%;
 }
+
+#map {
+    height: 90%;
+    width: 100%;
+}
+
 
 h1{
     font-size: 40px;
@@ -75,4 +81,22 @@ a:hover{
         margin-right: 0;
         padding: 0 1em;
     }
+}
+
+.bg-white{
+    background-color: #FFF;
+}
+
+.bg-yellow {
+    background-color: #FFC72C;
+}
+
+.btn, 
+.btn-primary,
+.bg-white, 
+.modal-btn {
+    background-color: #FFF;
+    border-radius: 0px !important;
+    border-color: #FFF;
+    align-items: center;
 }
