@@ -16,6 +16,11 @@ footer {
     height: 91px;
 }
 
+.navbar>.container-fluid {
+    background: #f8f9fa;
+    padding-bottom: 10px !important;
+}
+
 #map {
     height: calc(100vh - 163px);
     width: 100%;
