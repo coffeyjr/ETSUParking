@@ -11,6 +11,7 @@
 - blue: #041E42
 
 */
+
 /* Initializing Map */
 var map = L.map('map').setView([36.30258584306485, -82.369561252428231], 17);
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
