@@ -71,8 +71,51 @@ L.marker([36.30216, -82.37246], {icon: lot21a}).addTo(map).bindPopup("Available 
 var latlng = [[36.30281, -82.37244],[36.30191, -82.37186], [36.30158, -82.37250], [36.30245, -82.37311]];
 var polygon = L.polygon(latlng, {color: '#041E42'}).addTo(map).on('click', clickZoom);
 
+/* ------ Parking Lot 27 */
+var lot27 = L.icon({
+    iconUrl: 'images/number_27.png',
 
-/* ------ Parking Lots - Faculty & Students ------ */
+    
+    iconSize:     [32, 37], // size of the icon
+    iconAnchor:   [17, 36], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, -30] // point from which the popup should open relative to the iconAnchor
+})
+L.marker([36.304755, -82.368564], {icon: lot27}).addTo(map).bindPopup("Available Spots: " + random100()).on('click', clickZoom);
+
+var latlng = [[36.305047, -82.369052],[36.304297, -82.368556], [36.304467, -82.368156], [36.305207, -82.368661]];
+var polygon = L.polygon(latlng, {color: '#041E42'}).addTo(map).on('click', clickZoom);
+
+
+/* ------ Parking Lots - Unassigned ------ */
+
+/* ------ Parking Lot 15 */
+var lot15 = L.icon({
+    iconUrl: 'images/number_15.png',
+
+    
+    iconSize:     [32, 37], // size of the icon
+    iconAnchor:   [17, 36], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, -30] // point from which the popup should open relative to the iconAnchor
+})
+L.marker([36.300421, -82.36802], {icon: lot15}).addTo(map).bindPopup("Available Spots: " + random1000()).on('click', clickZoom);
+
+var latlng = [[36.29988, -82.369382],[36.299643, -82.369216], [36.299999, -82.368553], [36.300976, -82.366748], [36.301247, -82.366614], [36.300561, -82.367985], [36.299883, -82.369385]];
+var polygon = L.polygon(latlng, {color: '#fab9b9'}).addTo(map).on('click', clickZoom);
+
+/* ------ Parking Lot 16 */
+var lot16 = L.icon({
+    iconUrl: 'images/number_16.png',
+
+    
+    iconSize:     [32, 37], // size of the icon
+    iconAnchor:   [17, 36], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, -30] // point from which the popup should open relative to the iconAnchor
+})
+L.marker([36.299426, -82.370232], {icon: lot16}).addTo(map).bindPopup("Available Spots: " + random100()).on('click', clickZoom);
+
+var latlng = [[36.299253, -82.370742],[36.299091, -82.370627], [36.299452, -82.370045], [36.299532, -82.369889], [36.299413, -82.369819], [36.299595, -82.369372], [36.299753, -82.369516], [36.299772, -82.369616], [36.29963, -82.369943], [36.299606, -82.36994], [36.299506, -82.370163], [36.299504, -82.370227], [36.299253, -82.370742]];
+var polygon = L.polygon(latlng, {color: '#fab9b9'}).addTo(map).on('click', clickZoom);
+
 
 /* ------ Parking Lot 22 */
 var lot22 = L.icon({
@@ -90,6 +133,12 @@ var polygon = L.polygon(latlng, {color: '#fab9b9'}).addTo(map).on('click', click
 
 
 /* ----- Random Number Generators ------ */
+
+/* ----- Extra Small lots ----- */
+function random100() {
+    var num = Math.floor((Math.random() * 101) + 1);
+    return num;
+  }
 
 /* ----- Small lots ----- */
 function random300() {
