@@ -11,6 +11,7 @@ html, body {
 
 footer {
     height: 60px;
+    display: grid;
 }
 
 .navbar {
@@ -130,4 +131,9 @@ a:hover{
 
 .p-4 {
     padding: 18px 0 !important;
+}
+
+.bi, .bi-info-square, .right {
+    float: right;
+    margin-right: 20px;
 }
